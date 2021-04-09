@@ -35,7 +35,7 @@ public class UserController {
 	UserRepository userRepository;
 	
 	//Done
-	@GetMapping(value = "/users")
+	@GetMapping(value = "/user")
 	public ResponseEntity<List<User>> getAllUser(){
 		try {
 			List<User> users = new ArrayList<>();
@@ -48,7 +48,7 @@ public class UserController {
 	}
 	
 	//Done 
-	@GetMapping(value = "/users/{id}")
+	@GetMapping(value = "/user/{id}")
 	public ResponseEntity<User> getUser(@PathVariable("id") long id){
 		 Optional<User> user = userRepository.findById(id);
 		 if(user.isPresent()) return new ResponseEntity<>(user.get(),HttpStatus.OK);
@@ -57,7 +57,7 @@ public class UserController {
 	
 	
 	//Done
-	@PutMapping(value = "/users/{id}")
+	@PutMapping(value = "/user/{id}")
 	public ResponseEntity<User> updateUser(@PathVariable("id") long id, @RequestBody UserRequest userreq) {
 		
 		Optional<User> userData= userRepository.findById(id);
@@ -95,7 +95,7 @@ public class UserController {
 	}
 	
 	//Done
-	@DeleteMapping(value = "/users/{id}")
+	@DeleteMapping(value = "/user/{id}")
 	public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
 		//TODO: process DELETE request
 		try {
