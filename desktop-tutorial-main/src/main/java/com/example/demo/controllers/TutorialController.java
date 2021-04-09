@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.models.Tutorial;
 import com.example.demo.repository.TutorialRepository;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://cw1640.herokuapp.com")
 @RestController
 @RequestMapping("/api")
 public class TutorialController {
