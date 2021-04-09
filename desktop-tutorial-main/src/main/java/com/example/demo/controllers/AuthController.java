@@ -34,7 +34,7 @@ import com.example.demo.security.jwt.JwtUtils;
 import com.example.demo.security.services.UserDetailsImpl;
 import com.example.demo.payload.*;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://cw1640.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
