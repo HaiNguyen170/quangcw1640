@@ -26,7 +26,7 @@ import com.example.demo.repository.*;
 
 @CrossOrigin(origins="https://angular1640.herokuapp.com/")
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api")
 public class UserController {
 	@Autowired
 	FalcutyRepository falcutyRepository;
