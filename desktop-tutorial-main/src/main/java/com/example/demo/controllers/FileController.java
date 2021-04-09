@@ -63,7 +63,7 @@ import org.springframework.util.StringUtils;
   }*/
 
 @Controller
-@CrossOrigin("https://cw1640.herokuapp.com")
+@CrossOrigin("https://angular1640.herokuapp.com")
 @RequestMapping("/api/submit")
 public class FileController {
 	
