@@ -24,7 +24,7 @@ import com.example.demo.payload.request.UserRequest;
 import com.example.demo.repository.*;
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins="https://angular1640.herokuapp.com/")
 @RestController
 @RequestMapping("/api")
 public class UserController {
