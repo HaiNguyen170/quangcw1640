@@ -33,7 +33,7 @@ import com.example.demo.repository.ArticleRepository;
 import com.example.demo.repository.FalcutyRepository;
 import com.example.demo.repository.UserRepository;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://angular1640.herokuapp.com")
 @RestController
 @RequestMapping("/api")
 public class ArticleController {
