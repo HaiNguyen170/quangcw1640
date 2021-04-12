@@ -33,9 +33,10 @@ import com.example.demo.repository.ArticleRepository;
 import com.example.demo.repository.FalcutyRepository;
 import com.example.demo.repository.UserRepository;
 
-@CrossOrigin(origins = "https://angular1640.herokuapp.com")
+
+@CrossOrigin(origins = "https://angular1640.herokuapp.com", maxAge = 3600)
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/auth")
 public class ArticleController {
 	@Autowired
 	ArticleRepository articleRepository;
